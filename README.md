@@ -135,7 +135,7 @@ md5sum -c *.md5
 ### 自动切换(推荐)
 
 ```bash
-/opt/deepinwine/apps/Deepin-QQ/run.sh -d
+/opt/apps/com.qq.im.deepin/files/run.sh -d
 ```
 
 这会安装需要的依赖，移除已安装的 QQ 目录并回退对注册表文件的修改
@@ -170,7 +170,7 @@ yay -S deepin-wine5
 sudo pacman -S xsettingsd
 ```
 
-修改 `/opt/deepinwine/apps/Deepin-QQ/run.sh`：
+修改 `/opt/apps/com.qq.im.deepin/files/run.sh`：
 
 ```diff
 -WINE_CMD="wine"
@@ -187,7 +187,7 @@ sudo pacman -S xsettingsd
         else
 ```
 
-**注意：对 `/opt/deepinwine/apps/Deepin-QQ/run.sh` 的修改会在 `deepin-wine-qq` 更新或重装时被覆盖，可以单独拷贝一份作为启动脚本**
+**注意：对 `/opt/apps/com.qq.im.deepin/files/run.sh` 的修改会在 `deepin-wine-qq` 更新或重装时被覆盖，可以单独拷贝一份作为启动脚本**
 
 #### 3. 删除已安装的QQ目录
 
