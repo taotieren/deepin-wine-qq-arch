@@ -1,4 +1,5 @@
 # Maintainer: Codist <countstarlight@gmail.com>
+# Maintainer: taotieren <admin@taotieren.com>
 
 pkgname=deepin-wine-qq
 pkgver=9.4.1.27572

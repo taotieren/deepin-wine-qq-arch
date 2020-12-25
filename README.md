@@ -143,7 +143,7 @@ md5sum -c *.md5
 切换回 `wine`：
 
 ```bash
-rm ~/.deepinwine/Deepin-QQ/deepin
+rm ~/.deepinwine/com.qq.im.deepin/deepin
 ```
 
 如果要卸载自动安装的依赖：
@@ -192,7 +192,7 @@ sudo pacman -S xsettingsd
 #### 3. 删除已安装的QQ目录
 
 ```bash
-rm -rf ~/.deepinwine/Deepin-QQ
+rm -rf ~/.deepinwine/com.qq.im.deepin
 ```
 
 #### 4. 修复 `deepin-wine5` 字体渲染发虚
@@ -224,13 +224,13 @@ yay -S lib32-freetype2-infinality-ultimate
 对于 `wine`：
 
 ```bash
-env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" winecfg
+env WINEPREFIX="$HOME/.deepinwine/com.qq.im.deepin" winecfg
 ```
 
 对于 `deepin-wine` ：
 
 ```bash
-env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" deepin-wine5 winecfg
+env WINEPREFIX="$HOME/.deepinwine/com.qq.im.deepin" deepin-wine5 winecfg
 ```
 
 ### GNOME 桌面上的悬浮窗口问题
@@ -243,7 +243,7 @@ env WINEPREFIX="$HOME/.deepinwine/Deepin-QQ" deepin-wine5 winecfg
 
 默认使用文泉驿微米黑(`wqy-microhei`)字体，可以使用Windows平台常用字体替代，直接将字体文件或字体链接文件放置到字体文件夹就会生效，不会影响系统字体
 
-字体文件夹在：`$HOME/.deepinwine/Deepin-QQ/drive_c/windows/Fonts`
+字体文件夹在：`$HOME/.deepinwine/com.qq.im.deepin/drive_c/windows/Fonts`
 
 ## 感谢
 
