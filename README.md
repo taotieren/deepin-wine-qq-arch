@@ -2,11 +2,11 @@
 ========
 
 <p align="center">
-  <a href="https://travis-ci.org/taotieren/deepin-wine-qq-arch">
-    <img src="https://travis-ci.org/taotieren/deepin-wine-qq-arch.svg?branch=master" alt="Build Status">
+  <a href="https://travis-ci.com/taotieren/deepin-wine-qq-arch">
+    <img src="https://travis-ci.com/taotieren/deepin-wine-qq-arch.svg?branch=master" alt="Build Status">
   </a>
   <a href="https://im.qq.com/download/">
-    <img src="https://img.shields.io/badge/QQ-9.4.0.27525-blue.svg" alt="QQ Version">
+    <img src="https://img.shields.io/badge/QQ-9.4.1.27572-blue.svg" alt="QQ Version">
   </a>
   <a href="https://aur.archlinux.org/packages/deepin-wine-qq/">
     <img src="https://img.shields.io/aur/version/deepin-wine-qq.svg" alt="AUR Version">
