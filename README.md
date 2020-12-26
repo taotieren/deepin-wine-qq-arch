@@ -1,9 +1,9 @@
-在Archlinux及衍生发行版上运行QQ
+在 Archlinux 及衍生发行版上运行 QQ
 ========
 
 <p align="center">
-  <a href="https://travis-ci.org/countstarlight/deepin-wine-qq-arch">
-    <img src="https://travis-ci.org/countstarlight/deepin-wine-qq-arch.svg?branch=master" alt="Build Status">
+  <a href="https://travis-ci.org/taotieren/deepin-wine-qq-arch">
+    <img src="https://travis-ci.org/taotieren/deepin-wine-qq-arch.svg?branch=master" alt="Build Status">
   </a>
   <a href="https://im.qq.com/download/">
     <img src="https://img.shields.io/badge/QQ-9.4.0.27525-blue.svg" alt="QQ Version">
@@ -11,11 +11,11 @@
   <a href="https://aur.archlinux.org/packages/deepin-wine-qq/">
     <img src="https://img.shields.io/aur/version/deepin-wine-qq.svg" alt="AUR Version">
   </a>
-  <a href="https://github.com/countstarlight/deepin-wine-qq-arch/releases">
-    <img src="https://img.shields.io/github/downloads/countstarlight/deepin-wine-qq-arch/total.svg" alt="GitHub Release">
+  <a href="https://github.com/taotieren/deepin-wine-qq-arch/releases">
+    <img src="https://img.shields.io/github/downloads/taotieren/deepin-wine-qq-arch/total.svg" alt="GitHub Release">
   </a>
-  <a href="https://github.com/countstarlight/deepin-wine-qq-arch/issues">
-    <img src="https://img.shields.io/github/issues/countstarlight/deepin-wine-qq-arch.svg" alt="GitHub Issues">
+  <a href="https://github.com/taotieren/deepin-wine-qq-arch/issues">
+    <img src="https://img.shields.io/github/issues/taotieren/deepin-wine-qq-arch.svg" alt="GitHub Issues">
   </a>
 </p>
 
@@ -77,9 +77,9 @@ yay -S deepin-wine-qq
 
 ### 用安装包安装
 
-> 由 [Travis CI](https://travis-ci.org/countstarlight/deepin-wine-qq-arch) 在 Docker 容器 [mikkeloscar/arch-travis](https://hub.docker.com/r/mikkeloscar/arch-travis) 中自动构建的 ArchLinux 安装包
+> 由 [Travis CI](https://travis-ci.org/taotieren/deepin-wine-qq-arch) 在 Docker 容器 [mikkeloscar/arch-travis](https://hub.docker.com/r/mikkeloscar/arch-travis) 中自动构建的 ArchLinux 安装包
 
-在 [GitHub Release](https://github.com/countstarlight/deepin-wine-qq-arch/releases) 页面下载后缀为 `.pkg.tar.xz` 或 `.pkg.tar.zst` 的安装包，使用`pacman`安装：
+在 [GitHub Release](https://github.com/taotieren/deepin-wine-qq-arch/releases) 页面下载后缀为 `.pkg.tar.xz` 或 `.pkg.tar.zst` 的安装包，使用`pacman`安装：
 
 ```bash
 sudo pacman -U #下载的包名
@@ -94,7 +94,7 @@ md5sum -c *.md5
 ### 本地打包安装
 
 ```shell
- git clone https://github.com/countstarlight/deepin-wine-qq-arch.git
+ git clone https://github.com/taotieren/deepin-wine-qq-arch.git
 
  cd deepin-wine-qq-arch
   
@@ -253,11 +253,14 @@ env WINEPREFIX="$HOME/.deepinwine/com.qq.im.deepin" deepin-wine5 winecfg
 
 * [@ssfdust](https://github.com/ssfdust) 的 [wszqkzqk-deepin-wine-tim-arch](https://github.com/ssfdust/wszqkzqk-deepin-wine-tim-arch)
 
+* [@countstarlight](https://github.com/countstarlight) 的 [countstarlight-deepin-wine-qq-arch](https://github.com/countstarlight/deepin-wine-qq-arch)
+
 ## 更新日志
 
 <details open>
 <summary>2020</summary>
 
+* 2020-12-25 QQ-9.4.1.27572 com.qq.im.deepin_9.3.2deepin14
 * 2020-12-24 QQ-9.4.1.27572
 * 2020-11-12 QQ-9.4.0.27525
 * 2020-10-18 QQ-9.3.9.27427
