@@ -1,40 +1,54 @@
-sudo: required
-
-services:
-- docker
-
-archlinux:
-  repos:
-  - archlinuxfr=http://repo.archlinux.fr/$arch
-  packages:
-  - p7zip
-  - wine
-  - wine-mono
-  - wine_gecko
-  - xorg-xwininfo
-  - wqy-microhei
-  - lib32-alsa-lib
-  - lib32-alsa-plugins
-  - lib32-libpulse
-  - lib32-openal
-  - lib32-mpg123
-  - lib32-gnutls
-  script:
-  - "makepkg"
-  - "./gen.sh -m"
-
-script:
-- "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
-
-deploy:
-  provider: releases
-  skip_cleanup: true
-  overwrite: true
-  api_key: $GH_TOKEN
-  file_glob: true
-  file:
-    - "deepin-wine-qq*.pkg*"
-  on:
-    tags: true
-    all_branches: true
-    repo: countstarlight/deepin-wine-qq-arch
+{
+  "archlinux": {
+    "repos": [
+      "archlinuxfr=http://repo.archlinux.fr/$arch"
+    ],
+    "packages": [
+      "p7zip",
+      "wine",
+      "wine-mono",
+      "wine_gecko",
+      "xorg-xwininfo",
+      "wqy-microhei",
+      "lib32-alsa-lib",
+      "lib32-alsa-plugins",
+      "lib32-libpulse",
+      "lib32-openal",
+      "lib32-mpg123",
+      "lib32-gnutls"
+    ],
+    "script": [
+      "makepkg",
+      "./gen.sh -m"
+    ]
+  },
+  "language": "ruby",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "sudo": true,
+  "services": [
+    "docker"
+  ],
+  "script": [
+    "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+  ],
+  "deploy": [
+    {
+      "provider": "releases",
+      "skip_cleanup": true,
+      "overwrite": true,
+      "file_glob": true,
+      "file": [
+        "deepin-wine-qq*.pkg*"
+      ],
+      "on": {
+        "tags": true,
+        "all_branches": true,
+        "repo": "taotieren/deepin-wine-qq-arch"
+      },
+      "token": "$GH_TOKEN"
+    }
+  ]
+}
