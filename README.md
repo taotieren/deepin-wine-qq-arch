@@ -1,6 +1,7 @@
 在 Archlinux 及衍生发行版上运行 QQ
 ========
 
+![CI](https://github.com/taotieren/deepin-wine-qq-arch/workflows/CI/badge.svg)
 <p align="center">
   <a href="https://travis-ci.com/taotieren/deepin-wine-qq-arch">
     <img src="https://travis-ci.com/taotieren/deepin-wine-qq-arch.svg?branch=master" alt="Build Status">
